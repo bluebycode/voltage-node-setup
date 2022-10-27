@@ -1,7 +1,7 @@
 
 require('dotenv').config({ path: require('find-config')('.env') })
 
-const makeRequest = require("./core").makeRequest;
+const makeRequest = require("./lib/core").makeRequest;
 const fs = require('fs');
 const crypto = require('crypto-js')
 
