@@ -27,7 +27,7 @@ Successfully created your node!
 Saved encrypted macaroon under macaroons/encrypted.seed
 Saved encrypted macaroon under macaroons/encrypted.macaroon
 
-# Files would be under macaroons/{encrypted.macaroon, seed.encrypted}
+# Files would be under macaroons/{encrypted.macaroon, seed.encrypted}
 $ node voltage-unlock.js -n ebafbd83-b3c6-4cb6-8e4d-b452123246e8N \
              -m macaroons/encrypted.macaroon \
              -s macaroons/encrypted.seed 
