@@ -3,7 +3,7 @@ const fs = require('fs/promises');
 
 require('dotenv').config({ path: require('find-config')('.env') })
 
-const makeRequest = require("./core").makeRequest;
+const makeRequest = require("./lib/core").makeRequest;
 
 
 async function backup(nodeId, encryptedMacaroon, encryptedSeed) {
