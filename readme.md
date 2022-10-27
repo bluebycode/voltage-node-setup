@@ -1,4 +1,4 @@
-voltage.cloud - setup and unlock a node
+**voltage.cloud - setup and unlock a node**
 ref: https://docs.voltage.cloud/api/creating-a-node-example
 
 Create a specific API KEY from [https://account.voltage.cloud/api-keys](https://account.voltage.cloud/api-keys).
@@ -6,6 +6,7 @@ Please add ```.env``` file with the API KEY node alias and generated password. U
 ````
 # Setup the node
 $ node voltage-add.js
+➜ 
 Creating your node...
 Using the apikey: XXXXXXXXXX
 Created the node: ebafbd83-b3c6-4cb6-8e4d-b452123246e8N
