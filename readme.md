@@ -1,14 +1,16 @@
-**voltage.cloud - setup and unlock a node**
-
-Simple steps suggested by Voltage.cloud to setup a node by Voltage API and LND API
-(ref: https://docs.voltage.cloud/api/creating-a-node-example).
-
-**Requirements**:
-Create a specific API KEY from [https://account.voltage.cloud/api-keys](https://account.voltage.cloud/api-keys).
-Please add ```.env``` file with the API KEY node alias and generated password. Use the .env-sample as template.
-
-**Steps**
 ````
+Voltage.cloud - Setup and unlock a Lightning Network node on cloud. Simple steps suggested 
+from Voltage.cloud to setup a node by Voltage API and LND API.
+
+Requirements:
+- Node.js installed on your system.
+- Create an API KEY from [https://account.voltage.cloud/api-keys](https://account.voltage.cloud/api-keys).
+- An `.env` file in your project's root directory containing your `API_KEY`.Use the .env-sample as template.
+
+Scripts:
+node voltage-unlock.js --node <node-id> [--macaroon-path <path-to-encrypted-macaroon>] [--seed-path <path-to-encrypted-seed>]
+
+Steps:
 # Setup the node
 $ node voltage-add.js
 ➜ 
@@ -36,4 +38,7 @@ Seed path: macaroons/encrypted.seed
 Uploading the macaroon to your node...
 Uploaded macaroon
 Uploaded seed
+
+References:
+- Voltage: Creating a node. https://docs.voltage.cloud/api/creating-a-node-example
 ````
